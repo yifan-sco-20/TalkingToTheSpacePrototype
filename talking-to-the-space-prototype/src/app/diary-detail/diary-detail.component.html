@@ -1,0 +1,11 @@
+<div *ngIf="diary">
+    <h2>{{diary.id}} ID</h2>
+    <div><span>Date Modified: </span>{{diary.date}}</div>
+    <div>
+        <label for="content">Content: </label>
+        <input id="content" [(ngModel)]="diary.content" placeholder="content">
+    </div>
+    <div><span>Content Display: </span>{{diary.content}}</div>
+    <div><span>Settings: </span>{{diary.setting | uppercase}}</div>
+    <button (click)="goBack()">go back</button>
+</div>

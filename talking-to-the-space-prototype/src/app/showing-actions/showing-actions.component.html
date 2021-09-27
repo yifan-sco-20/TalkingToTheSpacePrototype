@@ -1,0 +1,8 @@
+<div *ngIf="actionService.actions.length">
+
+    <h2>Action History</h2>
+    <button class="clear"
+            (click)="actionService.clear()">Clear Action History</button>
+    <div *ngFor='let action of actionService.actions'> {{action}} </div>
+  
+  </div>
