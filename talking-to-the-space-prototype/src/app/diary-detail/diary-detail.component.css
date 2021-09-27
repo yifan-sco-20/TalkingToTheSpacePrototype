@@ -1,24 +1,50 @@
 /* HeroDetailComponent's private CSS styles */
+
+.diary-detail-form {
+  min-width: 20%;
+  max-width: 90%;
+  margin: 5% auto 5% auto;
+}
+.diary-detail-full-width {
+  width: 100%;
+}
+
+.right {
+  position: absolute;
+  right: 5%;
+}
+
+.left {
+  position: absolute;
+  left: 5%;
+}
+
 label {
-    color: #435960;
-    font-weight: bold;
-  }
-  input {
-    font-size: 1em;
-    padding: .5rem;
-  }
-  button {
-    margin-top: 20px;
-    background-color: #eee;
-    padding: 1rem;
-    border-radius: 4px;
-    font-size: 1rem;
-  }
-  button:hover {
-    background-color: #cfd8dc;
-  }
-  button:disabled {
-    background-color: #eee;
-    color: #ccc;
-    cursor: auto;
-  }
+  color: #435960;
+  font-weight: bold;
+}
+input {
+  font-size: 1em;
+  padding: .5rem;
+  min-width: 20%;
+  max-width: 90%;
+}
+
+h2 {
+  margin: 0 auto 1em auto;
+  list-style-type: none;
+  padding: 0;
+  min-width: 20%;
+  max-width: 90%;
+}
+
+.button-row{
+  position: absolute;
+  margin-top: 5em;
+  right: 5%;
+}
+
+button{
+ margin-left: 1em;
+}
+

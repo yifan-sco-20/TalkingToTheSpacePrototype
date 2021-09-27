@@ -1,17 +1,16 @@
-
-<form class="example-form">
-  <mat-form-field class="example-full-width">
+<form class="diary-form">
+  <mat-form-field class="diary-full-width">
     <input matInput #message maxlength="256" placeholder="Message">
-    <mat-hint align="start"><strong>Don't disclose personal info</strong> </mat-hint>
-    <mat-hint align="end">{{message.value.length}} / 256</mat-hint>
+    <mat-hint align="start" ><strong>Don't disclose personal info</strong> </mat-hint>
+    <mat-hint align="end" >{{message.value.length}} / 99999</mat-hint>
   </mat-form-field>
 </form>
 
-
+<h2>Diaries</h2>
 <ul class="diaries">
   <li *ngFor="let diary of diaries">
     <a routerLink="/detail/{{diary.id}}">
-      <span class="badge">{{diary.id}}</span> {{diary.date}}
+      <span class="badge">{{diary.date}}</span> {{diary.content}}<span class="settings"><mat-icon>vpn_lock</mat-icon>{{diary.setting}}</span>
     </a>
   </li>
 </ul>

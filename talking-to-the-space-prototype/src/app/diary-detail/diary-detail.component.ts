@@ -10,8 +10,9 @@ import { DiaryService } from '../diary.service';
   styleUrls: ['./diary-detail.component.css']
 })
 export class DiaryDetailComponent implements OnInit {
-
+  
   @Input() diary?: Diary;
+  
 
   constructor(
     private route: ActivatedRoute,
