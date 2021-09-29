@@ -19,7 +19,8 @@ import { MatSidenavModule } from '@angular/material/sidenav';
 import { MatIconModule } from '@angular/material/icon';
 import { MatListModule } from '@angular/material/list';
 import { MatInputModule } from '@angular/material/input';
-import{MatSelectModule} from '@angular/material/select'
+import { MatSelectModule } from '@angular/material/select';
+import { MatMenuModule} from '@angular/material/menu';
 
 
 
@@ -48,7 +49,9 @@ import{MatSelectModule} from '@angular/material/select'
     MatIconModule,
     MatListModule,
     MatInputModule,
-    MatSelectModule
+    MatSelectModule,
+    MatMenuModule
+
   ],
   providers: [],
   bootstrap: [AppComponent]
