@@ -21,6 +21,11 @@ import { MatListModule } from '@angular/material/list';
 import { MatInputModule } from '@angular/material/input';
 import { MatSelectModule } from '@angular/material/select';
 import { MatMenuModule} from '@angular/material/menu';
+import { SignUpComponent } from './sign-up/sign-up.component';
+import { SignUpDialogComponent } from './sign-up-dialog/sign-up-dialog.component';
+import { MatDialogModule} from '@angular/material/dialog';
+import { LogInComponent } from './log-in/log-in.component';
+import { LoginInDialogComponent } from './login-in-dialog/login-in-dialog.component';
 
 
 
@@ -34,7 +39,11 @@ import { MatMenuModule} from '@angular/material/menu';
     DiaryDetailComponent,
     ShowingActionsComponent,
     DashboardComponent,
-    MainNavComponent
+    MainNavComponent,
+    SignUpComponent,
+    SignUpDialogComponent,
+    LogInComponent,
+    LoginInDialogComponent
   ],
   imports: [
     BrowserModule,
@@ -50,7 +59,8 @@ import { MatMenuModule} from '@angular/material/menu';
     MatListModule,
     MatInputModule,
     MatSelectModule,
-    MatMenuModule
+    MatMenuModule,
+    MatDialogModule
 
   ],
   providers: [],
